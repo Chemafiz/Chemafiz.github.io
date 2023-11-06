@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">My portfolio</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+                            <h1 style="font-size: 20px;">WORK IN PROGRESS:</h1>
+							<h1 class="major">Generating images of galaxies using DCGAN and cGAN</h1>
+							<span class="image fit"><img src="images/gan_galaxy.png" alt="" />
+                                <figcaption><em>At the top, DCGAN: generated images after 10, 20, and 50 epochs </br>
+                                    At the bottom, cGAN: generated images after 2, 25, and 100 epochs</em></figcaption>
+                            </span>
+							<p> A project utilizing cGAN to generate new galaxy images. 
+                                The use of cGAN (conditional Generative Adversarial Network) allows for selecting a class based on Galaxy morphological classification and generating an image of a non-existent galaxy. 
+                                The dataset used, astroNN Galaxy10, consists of a total of 17,000 images with dimensions of 256x256 pixels, divided into 10 classes.
+                                <br /><br />
+                                The project has proven to be much more challenging than anticipated due to hardware limitations. 
+                                My PC has relatively limited RAM, and loading the training images into RAM is not feasible. 
+                                Consequently, I had to create a custom generator to load images in batches directly from the hard drive. 
+                                Another limitation is the training time of the network. Due to the high number of parameters and the use of my older GPU, the training process is quite slow.
+                                <br /><br />
+                                
+                                <ul>
+                                    Work in progress:
+                                    <li>fine-tuning hyperparameters</li>
+                                    <li>training the model on a larger number of images and epochs</li>
+                                    <li>increasing the initial resolution (currently 64x64)</li>
+                                    <li>improving the network architecture</li>
+                                  </ul>
+
+								For source code please visit my Github repo:
+								<ul class="actions">
+									<li><a href="https://github.com/Chemafiz/GAN-galaxy-images/tree/main" target="_blank" class="button">Go to repo</a></li>
+								</ul> 
+							</p>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
