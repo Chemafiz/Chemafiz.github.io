@@ -34,14 +34,25 @@
 							<span class="image fit"><img src="images/my_galaxy.png" alt="" />
 								<figcaption><em>Simulated collision example vs real example</em></figcaption>
 							</span>
-							<p> This is numeric simulation of two colliding galaxies. The program is very basic in terms of optimization.<br />
-								I have applied the simplest numerical algorithm to solve gravitational field equations, but it calculates "stars" and "galaxies" position in real-time.<br />
-								Graphic was done with PyGame library. It was hard to gain some good efficiency (Python is so sloooow) and to achieve good FPS ,with at least 2000 stars, I used NumPy arrays.<br />
-								Above we can see screenshot of running program with two colliding galaxies vs two real galaxies colliding. I think there is some kind of similarity between them :)<br /><br />
+							<video width="100%" height="auto" controls>
+								<source src="images/Galaxy Collision video.mp4" type="video/mp4">
+							</video>
+							<p> <em>Video showing running simulation</em></p>
+							<p> 
+								This is a numerical simulation of two colliding galaxies. 
+								I put a lot of effort into optimizing the program using Numpy and Numba. 
+								I applied the simplest numerical algorithm to solve gravitational field equations. 
+								This leads to the emergence of significant numerical errors, but it is not computationally complex. 
+								The use of the OpenCV library allowed for the creation of a simple real-time graphical visualization. 
+								Using a not very powerful my laptop processor, I am able to achieve smooth operation with up to 300k stars.<br /><br />
+								
+								Above we can see screenshot of running program with two colliding galaxies vs two real galaxies colliding.
+								I think there is some kind of similarity between them :) <br /><br />
 								
 								TO DO IN THE NEAR FUTURE:<br />
-								Utilize GPGPU by using Numba.<br />
-								Implement more advanced numerical methods algorithms -> reduced numerical errors and improved performance.<br /><br />
+								-Utilize GPGPU by using Numba<br />
+								-Use multiprocessing <br />
+								-Implement more advanced numerical methods algorithms -> reduced numerical errors<br /><br />
 								For source code please visit my Github repo:
 								<ul class="actions">
 									<li><a href="https://github.com/Chemafiz/Galaxy-Collision-Simulation" target="_blank" class="button">Go to repo</a></li>
